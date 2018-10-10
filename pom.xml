@@ -42,6 +42,7 @@
     <scm>
         <url>https://github.com/fcrepo4-labs/jetty-console</url>
         <connection>scm:git:git@github.com:fcrepo4-labs/jetty-console.git</connection>
+        <developerConnection>scm:git:git@github.com:fcrepo4-labs/jetty-console.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -191,6 +192,8 @@
         <jetty.version>9.3.25.v20180904</jetty.version>
         <jexmec.version>2.0.0rc7</jexmec.version>
         <slf4j.version>1.7.5</slf4j.version>
+        <release.plugin.version>2.5.2</release.plugin.version>
+        <scm-provider-gitexe.plugin.version>1.9.4</scm-provider-gitexe.plugin.version>
     </properties>
 
     <build>
@@ -216,6 +219,21 @@
                     </archive>
                 </configuration>
                 <inherited>true</inherited>
+            </plugin>
+            <plugin>
+              <artifactId>maven-release-plugin</artifactId>
+              <version>${release.plugin.version}</version>
+              <configuration>
+                <!-- see http://jira.codehaus.org/browse/MRELEASE-424 -->
+                <mavenExecutorId>forked-path</mavenExecutorId>
+              </configuration>
+              <dependencies>
+                <dependency>
+                  <groupId>org.apache.maven.scm</groupId>
+                  <artifactId>maven-scm-provider-gitexe</artifactId>
+                  <version>${scm-provider-gitexe.plugin.version}</version>
+                </dependency>
+              </dependencies>
             </plugin>
         </plugins>
     </build>
