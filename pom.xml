@@ -26,7 +26,7 @@
     <description>
         Creates runnable wars by embedding Jetty into the WAR
     </description>
-    <url>https://github.com/eirbjo/jetty-console</url>
+    <url>https://github.com/fcrepo4-labs/jetty-console</url>
     <developers>
         <developer>
             <name>Eirik Bjorsnos</name>
@@ -40,8 +40,8 @@
 
 
     <scm>
-        <url>https://github.com/eirbjo/jetty-console</url>
-        <connection>scm:git:git@github.com:eirbjo/jetty-console.git</connection>
+        <url>https://github.com/fcrepo4-labs/jetty-console</url>
+        <connection>scm:git:git@github.com:fcrepo4-labs/jetty-console.git</connection>
         <tag>HEAD</tag>
     </scm>
 
@@ -53,9 +53,13 @@
     </licenses>
 
     <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Shapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
         <repository>
-            <id>oss.sonatype.org-kantega</id>
-            <name>Nexus Release Repository</name>
+            <id>sonatype-nexus-staging</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
