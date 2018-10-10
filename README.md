@@ -10,7 +10,7 @@ Add the following configuration to your Maven webapp pom.xml:
 
 ```
 <plugin>
-    <groupId>org.simplericity.jettyconsole</groupId>
+    <groupId>org.fcrepo</groupId>
     <artifactId>jetty-console-maven-plugin</artifactId>
     <version>${jettyconsole.version}</version>
     <executions>

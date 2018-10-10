@@ -237,7 +237,7 @@ public class CreateDescriptorMojo
                 String groupId = dep.getGroupId();
                 String version = dep.getVersion();
                 if (groupId == null && version == null) {
-                    groupId = "org.simplericity.jettyconsole";
+                    groupId = "org.fcrepo";
                     version = props.getProperty("version");
                 }
 
@@ -298,7 +298,7 @@ public class CreateDescriptorMojo
 
         getLog().info("Resolving dependencies for version " + version +" of jetty-console-core");
 
-        artifacts.add(artifactFactory.createDependencyArtifact("org.simplericity.jettyconsole", "jetty-console-core", VersionRange.createFromVersion(version), "jar", null, "runtime"));
+        artifacts.add(artifactFactory.createDependencyArtifact("org.fcrepo", "jetty-console-core", VersionRange.createFromVersion(version), "jar", null, "runtime"));
 
         List<File> artifactFiles = new ArrayList<File>();
         try {

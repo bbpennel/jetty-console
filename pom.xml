@@ -18,7 +18,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.simplericity.jettyconsole</groupId>
+    <groupId>org.fcrepo</groupId>
     <artifactId>jetty-console</artifactId>
     <packaging>pom</packaging>
     <version>1.61-SNAPSHOT</version>
@@ -73,56 +73,56 @@
         <dependencies>
 
             <dependency>
-                <groupId>org.simplericity.jettyconsole</groupId>
+                <groupId>org.fcrepo</groupId>
                 <artifactId>jetty-console-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
 
             <dependency>
-                <groupId>org.simplericity.jettyconsole</groupId>
+                <groupId>org.fcrepo</groupId>
                 <artifactId>jetty-console-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>org.simplericity.jettyconsole</groupId>
+                <groupId>org.fcrepo</groupId>
                 <artifactId>jetty-console-creator</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>org.simplericity.jettyconsole</groupId>
+                <groupId>org.fcrepo</groupId>
                 <artifactId>jetty-console-maven-plugin</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>org.simplericity.jettyconsole</groupId>
+                <groupId>org.fcrepo</groupId>
                 <artifactId>jetty-console-ajp-plugin</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>org.simplericity.jettyconsole</groupId>
+                <groupId>org.fcrepo</groupId>
                 <artifactId>jetty-console-jsp-plugin</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>org.simplericity.jettyconsole</groupId>
+                <groupId>org.fcrepo</groupId>
                 <artifactId>jetty-console-winsrv-plugin</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>org.simplericity.jettyconsole</groupId>
+                <groupId>org.fcrepo</groupId>
                 <artifactId>jetty-console-startstop-plugin</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>org.simplericity.jettyconsole</groupId>
+                <groupId>org.fcrepo</groupId>
                 <artifactId>jetty-console-jettyxml-plugin</artifactId>
                 <version>${project.version}</version>
             </dependency>
