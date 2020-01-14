@@ -21,7 +21,7 @@
     <groupId>org.fcrepo</groupId>
     <artifactId>jetty-console</artifactId>
     <packaging>pom</packaging>
-    <version>1.61-SNAPSHOT</version>
+    <version>1.62</version>
     <name>Jetty-Console parent pom</name>
     <description>
         Creates runnable wars by embedding Jetty into the WAR
@@ -43,7 +43,7 @@
         <url>https://github.com/fcrepo4-labs/jetty-console</url>
         <connection>scm:git:git@github.com:fcrepo4-labs/jetty-console.git</connection>
         <developerConnection>scm:git:git@github.com:fcrepo4-labs/jetty-console.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jetty-console-1.62</tag>
     </scm>
 
     <licenses>
