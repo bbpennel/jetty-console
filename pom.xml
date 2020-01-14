@@ -21,7 +21,7 @@
     <groupId>org.fcrepo</groupId>
     <artifactId>jetty-console</artifactId>
     <packaging>pom</packaging>
-    <version>1.61-SNAPSHOT</version>
+    <version>1.62-SNAPSHOT</version>
     <name>Jetty-Console parent pom</name>
     <description>
         Creates runnable wars by embedding Jetty into the WAR
@@ -206,6 +206,14 @@
                     <target>1.7</target>
                 </configuration>
                 <inherited>true</inherited>
+            </plugin>
+            <plugin>
+            	<groupId>org.apache.maven.plugins</groupId>
+            	<artifactId>maven-javadoc-plugin</artifactId>
+            	<configuration>
+            	    <source>8</source>
+            	    <doclint>none</doclint>
+            	</configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
