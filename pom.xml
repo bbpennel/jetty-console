@@ -208,6 +208,14 @@
                 <inherited>true</inherited>
             </plugin>
             <plugin>
+            	<groupId>org.apache.maven.plugins</groupId>
+            	<artifactId>maven-javadoc-plugin</artifactId>
+            	<configuration>
+            	    <source>8</source>
+            	    <doclint>none</doclint>
+            	</configuration>
+            </plugin>
+            <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
                 <configuration>
