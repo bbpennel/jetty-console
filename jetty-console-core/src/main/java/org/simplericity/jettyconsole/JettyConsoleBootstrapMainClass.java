@@ -87,6 +87,10 @@ public class JettyConsoleBootstrapMainClass implements Runnable {
      * @throws Exception
      */
     public static void main(String[] arguments) throws Exception {
+        // This disables the logging of classes that are found in multiple jars, which is an unavoidable problem
+        // in some of our dependencies.
+        System.setProperty("org.slf4j.simpleLogger.log.org.eclipse.jetty.annotations.AnnotationParser", "ERROR");
+
         new JettyConsoleBootstrapMainClass().run(arguments);
     }
 

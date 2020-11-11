@@ -184,15 +184,15 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.10</version>
+            <version>4.13.1</version>
         </dependency>
     </dependencies>
 
     <properties>
-        <jetty.version>9.4.24.v20191120</jetty.version>
+        <jetty.version>9.4.34.v20201102</jetty.version>
         <jexmec.version>2.0.0rc7</jexmec.version>
-        <slf4j.version>1.7.5</slf4j.version>
-        <release.plugin.version>2.5.2</release.plugin.version>
+        <slf4j.version>1.7.30</slf4j.version>
+        <release.plugin.version>2.5.3</release.plugin.version>
         <scm-provider-gitexe.plugin.version>1.9.4</scm-provider-gitexe.plugin.version>
     </properties>
 
@@ -200,7 +200,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>3.8.1</version>
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
@@ -217,7 +217,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
+                <version>3.2.0</version>
                 <configuration>
                     <archive>
                         <manifest>
@@ -260,7 +260,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.0-alpha-4</version>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
